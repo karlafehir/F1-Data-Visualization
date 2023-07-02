@@ -3,10 +3,9 @@
 <head>
   <title>Drivers</title>
   <style>
-
     :root {
-        --primary-color: #E6002B;
-        --secondary-color: #6c757d;
+      --primary-color: #E6002B;
+      --secondary-color: #6c757d;
     }
 
     @font-face {
@@ -22,7 +21,6 @@
       src: url(./font/F1-Wide.ttf);
     }
 
-
     body {
       background-image: url("images/bg.png");
       margin: 0;
@@ -31,14 +29,6 @@
       line-height: 1.5;
     }
 
-    /* h1 {
-      font-family: F1-Regular, sans-serif;
-      text-align: center;
-      margin-top: 30px;
-    } */
-
-
-
     select {
       padding: 10px;
       font-size: 16px;
@@ -46,7 +36,6 @@
       color: #000;
     }
 
-    /* CSS for Drivers List */
     #drivers-list {
       list-style-type: none;
       padding: 0;
@@ -81,11 +70,7 @@
       font-size: 16px;
     }
 
-    /* .red {
-      color: red;
-    } */
-
-    #nav_bar{
+    #nav_bar {
       display: flex;
       align-items: center;
       height: 72px;
@@ -93,11 +78,13 @@
       background-color: var(--primary-color);
       padding-left: 32px;
     }
-    .logo{
+
+    .logo {
       height: 40px;
       padding-right: 32px;
     }
-    .links{
+
+    .links {
       font-family: F1-Regular, sans-serif;
       font-size: 16px;
       text-decoration: none;
@@ -105,29 +92,27 @@
       padding: 16px;
     }
 
-    #drivers-dropdown{
-        display: flex;
-        align-items: center;
-        font-family: F1-Regular, sans-serif;
-        font-size: 18px;
-        gap: 20px;
-        margin: 20px 0 12px 32px;
-    }
-    #dropdown select{
-        font-family: F1-Regular, sans-serif;
-        font-size: 16px;
-        border: 1px solid #000000;
-        padding: 8px;
-    }
-    h1{
-        font-family: F1-Regular, sans-serif;
-        font-size: 24px;
-        margin: 0;
+    #drivers-dropdown {
+      display: flex;
+      align-items: center;
+      font-family: F1-Regular, sans-serif;
+      font-size: 18px;
+      gap: 20px;
+      margin: 20px 0 12px 32px;
     }
 
+    #dropdown select {
+      font-family: F1-Regular, sans-serif;
+      font-size: 16px;
+      border: 1px solid #000000;
+      padding: 8px;
+    }
 
-
-
+    h1 {
+      font-family: F1-Regular, sans-serif;
+      font-size: 24px;
+      margin: 0;
+    }
 
     .podium {
       display: flex;
@@ -145,37 +130,19 @@
       border-radius: 8px;
     }
 
-    .podium-driver:first-child {
-      /* background-color: gold; */
-    }
-
-    .podium-driver:nth-child(2) {
-      /* background-color: silver; */
-    }
-
-    .podium-driver:nth-child(3) {
-      /* background-color: #cd7f32; */
-    }
-
     .podium-driver:not(:last-child) {
       margin-right: 20px;
     }
 
-
-    #remaining-drivers-list{
+    #remaining-drivers-list {
       display: flex;
       flex-direction: column;
       align-items: center;
-      
     }
 
     #remaining-drivers-list li {
-    border-bottom: 2px solid #E6002B;
-  }
-
-
-    
-
+      border-bottom: 2px solid #E6002B;
+    }
   </style>
 </head>
 <body>
@@ -194,8 +161,6 @@
   <ul id="drivers-list" class="podium"></ul>
   <hr>
   <ul id="remaining-drivers-list"></ul>
-
-
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="drivers.js"></script>
